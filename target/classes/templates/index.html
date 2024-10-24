@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" lang="pt-br"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Página</title>
+    <link rel="stylesheet" th:href="@{css/index.css}">
+    <!-- o @ do link do css com th:href"@{....}" é o interpolador busca o arquivo css sem especificar o caminho inteiro -->
+    <script th:src="@{js/index.js}"></script>
+    
+    <!-- @ -> interpolador de links -->
+
+</head>
+
+<body>
+    <h1>Olá, Mundo!</h1>
+
+    <button id="btn1">OK</button> <br>
+
+    <img th:src="@{imgs/025.png}" alt="Imagem do Pikachu"> <br>
+
+    <ul>
+          <li><a th:href="@{/p1}">Página 01</a></li>
+          <li><a th:href="@{/p2}">Página 02</a></li>
+           
+    </ul>
+    
+</body>
+</html>
